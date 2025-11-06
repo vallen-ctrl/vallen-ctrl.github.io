@@ -7,6 +7,9 @@
     <title>Sidebar Ikon Tooltip</title>
     <link rel="stylesheet" href="style.css">
     <script src="TR_PTI_Navbar_Bottom.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -42,7 +45,8 @@
             <i class="fas fa-power-off"></i>
         </div>
     </div>
-    <div id="contentAllJoin">
+    <div id="contentAllJoinup">
+        <div id="contentAllJoin">
         <div class="wrap">
             <!-- ELEMENT: Banner The Presenters  -->
             <section class="banner" aria-label="The Presenters">
@@ -129,6 +133,12 @@
             </section>
             <!-- Top Mahasiswa  -->
         </div>
+        <div class="music-search" id="musicSearch">
+            <div class="music-search-inter" id="music-container">
+            
+        </div>
+    </div>
+    </div>
     </div>
 
     <div class="player-container">
@@ -227,5 +237,13 @@
         </div>
     </div>
 </body>
+<script src="./components.js"></script>
+    <script type="module">
+        import {musicsongs} from './components.js'
+        import * as axios from "https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+
+        const musicContainer = document.getElementById("music-container");
+        musicContainer.appendChild(musicsongs("halo","dodo"))
+    </script>
 
 </html>
