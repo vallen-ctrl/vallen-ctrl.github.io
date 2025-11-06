@@ -1,0 +1,44 @@
+{
+  "subsonic-response": {
+    "status": "ok",
+    "version": "1.16.1"
+  }
+}
+```
+
+#### B. **Search Musik**
+```
+GET http://localhost:4533/rest/search3?query=love&u=admin&t=[token]&s=[salt]&v=1.16.1&c=Postman&f=json
+```
+Akan return: song, album, artist yang cocok
+
+#### C. **Get All Songs** (query kosong)
+```
+GET http://localhost:4533/rest/search3?query=&u=admin&t=[token]&s=[salt]&v=1.16.1&c=Postman&f=json
+```
+
+#### D. **Get Cover Art**
+```
+GET http://localhost:4533/rest/getCoverArt?id=[songId]&size=300&u=admin&t=[token]&s=[salt]&v=1.16.1&c=Postman&f=json
+```
+
+#### E. **Stream Song**
+```
+GET http://localhost:4533/rest/stream?id=[songId]&u=admin&t=[token]&s=[salt]&v=1.16.1&c=Postman&f=json
+
+
+
+### untuk tidak melihat album dan artis
+http://localhost:4533/rest/search3?query=love&songCount=5&albumCount=0&artistCount=0&u=admin&t=[token]&s=[salt]&v=1.16.1&c=Postman&f=json
+
+###cara penempatan di html 
+<audio id="player" controls>
+  <source src="http://localhost:4533/rest/stream?id=song123&u=admin&t=abc...&s=abc&v=1.16.1&c=MyApp&f=json" type="audio/mpeg">
+</audio>
+
+
+### dan ini kalau di js 
+const audioPlayer = document.getElementById('player');
+const songId = 'song123'; // dari hasil search3
+const streamUrl = `http://localhost:4533/rest/stream?id=${songId}&u=admin&t=${token}&s=${salt}&v=1.16.1&c=MyApp&f=json`;
+
