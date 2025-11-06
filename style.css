@@ -12,10 +12,11 @@
 
 .music-search{
     overflow-y: auto;
-    width: 30%;
+    width: 20%;
     max-width: 600px;
-    margin: 0 auto;
-    max-height: 50%;
+    margin: 0 0;
+    margin-right: 50px;
+    max-height: 500px;
     background-color: #252525;
     border-radius: 20px;
 }
@@ -24,27 +25,37 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 #contentAllJoinup{
     width: 100%;
     display: flex;
     align-items: center;
-    /* flex-direction: column; */
     margin: auto auto;
-    justify-content: space-between;
+    
 }
 
 #contentAllJoin{
     display: flex;
     width: 100%;
     height: fit-content;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 0 50px;
-    /* flex-wrap: wrap; */
     margin: auto;
+    
 }
+
+@media screen and (max-width: 1800px) {
+    #contentAllJoin{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 100px;
+    }
+    .music-search{
+        width: 100%;
+    }
+}
+
 
 .music-search-inter{
     padding: 20px;
@@ -86,7 +97,7 @@ circle:nth-child(2){
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -59%);
+    transform: translate(-50%, -55%);
     object-fit: cover;
 }
 
@@ -107,6 +118,11 @@ circle:nth-child(2){
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
+}
+
+#audioplayer{
+    position: absolute;
+    top: -300px;
 }
 
 #penyanyi{
@@ -339,7 +355,7 @@ body {
     border-radius: 12px;
     padding: 20px 30px;
     width: 90%;
-    max-width: 1100px;
+    max-width: 97%;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4); /* Bayangan untuk efek depth */
 }
 
@@ -851,3 +867,4 @@ body {
   object-fit: cover;
   display: block;
 }
+

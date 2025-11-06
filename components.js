@@ -3,7 +3,7 @@ const cutString = (str, maxWidht, endPrefix) =>{
 }
 
 
-const musicsongs = (title, artist)=>{
+const musicsongs = (title, artist, musicId=1, imageSRC="")=>{
             const doc = document.createElement("div")
             doc.classList.add = "container-music"
             doc.innerHTML = `<div>
@@ -13,7 +13,7 @@ const musicsongs = (title, artist)=>{
                             <circle cx="50%" cy="50%" r="30"></circle>
                             <circle cx="50%" cy="50%" r="30"></circle>
                         </svg>
-                        <img src="./try.jpg" alt="" id="image">
+                        <img src="${imageSRC}" alt="" id="image">
                     </div>
                     <div id="title">
                         <p id="nameSong">${cutString(title, 20, "..")}</p>
@@ -21,7 +21,7 @@ const musicsongs = (title, artist)=>{
                     </div>
                     <!-- From Uiverse.io by catraco -->
                     <label class="container">
-                        <input checked="checked" type="checkbox">
+                        <input id="${musicId}" type="checkbox" musicid="${musicId}" onclick="playpausebtn('${musicId}')">
                         <svg viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="play">
                             <path
                                 d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z">
@@ -37,7 +37,3 @@ const musicsongs = (title, artist)=>{
             </div>`;
             return doc
         }
-
-export {
-    musicsongs
-}
