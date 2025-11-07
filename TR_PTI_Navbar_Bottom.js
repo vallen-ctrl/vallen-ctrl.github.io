@@ -8,9 +8,9 @@ const getlist = (search="", songCount=10, songOffset=0) => {
     return BASEURL + `/rest/search3?query=${search}&songCount=${songCount}&songOffset=${songOffset}${auth()}`
 } 
 
-const getThumbnailURL = (id)=>{
+const getThumbnailURL = (id, size = 100)=>{
     if (!id) return console.error("please see your id music")
-    return `${BASEURL}/rest/getCoverArt?id=${id}&size=100${auth()}`
+    return `${BASEURL}/rest/getCoverArt?id=${id}&size=${size}${auth()}`
 }
 
 const getLiveSongURL = (id) =>{
@@ -50,6 +50,7 @@ const nextBTN = document.getElementById("next-btn");
 const inputSearch = document.getElementById("inputsearch");
 const musicSearchtop = document.getElementById("music-container-search");
 const popupwin = document.getElementById("musicSearch-dialog")
+const artisID = document.getElementById("artistlistid");
 // FUNGSI HELPER
 
 // Fungsi untuk format detik menjadi MM:SS
@@ -72,11 +73,12 @@ async function getMusicListAndSearch(search=""){
     return hasil
 }
 
+
 async function appendToMusic() {
     try{
-        const songlist = await fetch(getRandomSongURL(10)).then(f => f.json());
+        const songlist = await fetch(getRandomSongURL(20)).then(f => f.json());
         const songs = songlist['subsonic-response'].randomSongs?.song || [];
-        
+        document.getElementById("loaderMusicsong").remove()
         songs.forEach(element => {
             if(!songlistMetadata.includes(element.id)){
                 songlistMetadata.push(element.id)
@@ -85,7 +87,10 @@ async function appendToMusic() {
         });
     }catch(err){
         console.error(err);
-
+        document.getElementById("textdownload").textContent = "Retry?"
+         document.getElementById("textdownload").addEventListener("click", ()=>{
+            appendToMusic();
+         })
         // alert("EROR WHEN GET DATA TO SERVER PLEASE SEE YOUR CONNECTION")
     }
 }
@@ -178,7 +183,6 @@ audioControl.addEventListener("ended", ()=>{
 
 
 async function playpausebtn(id){
-    console.log("[INFO]: GOING TO ID: "+ id)
     isPlaying = !isPlaying; // Toggle status playing
     
     if(idBefore != id && idBefore && id != 0){
@@ -189,34 +193,40 @@ async function playpausebtn(id){
         document.getElementById(idBefore).removeAttribute("checked")
         isPlaying = true;
     }
-
+    
     if(id != 0){
         idBefore = id
+    }else if(id == 0 && !idBefore){
+        id = songlistMetadata[0]
     }
-    
-   const idnow = id == 0 ? idBefore : id
-    if (isPlaying){
+    console.log("[INFO]: GOING TO ID: "+ id)
+    const idnow = id == 0 ? idBefore : id
+    try{
+        if (isPlaying){
+            audioControl.src = getLiveSongURL(idnow);
+            document.getElementById(idnow).setAttribute("checked", "checked")
+            document.getElementById(idnow).checked = true;
+            playIcon.style.display = 'none'; // Sembunyikan icon play
+            pauseIcon.style.display = 'block'; // Tampilkan icon pause
+            if(currentTime > 0){
+                audioControl.currentTime = currentTime
+                audioControl.play()
+            }else{
+                audioControl.play();
+            }
 
-        audioControl.src = getLiveSongURL(idnow);
-        playIcon.style.display = 'none'; // Sembunyikan icon play
-        pauseIcon.style.display = 'block'; // Tampilkan icon pause
-        document.getElementById(idnow).setAttribute("checked", "checked")
-        document.getElementById(idnow).checked = true;
-        if(currentTime > 0){
-            audioControl.currentTime = currentTime
-            audioControl.play()
-        }else{
-            audioControl.play();
+        } else {
+            // Saat pause diklik
+            audioControl.pause()
+            playIcon.style.display = 'block'; // Tampilkan icon play
+            pauseIcon.style.display = 'none'; // Sembunyikan icon pause
+            clearInterval(progressInterval);
+            document.getElementById(idnow).checked = false;
+            document.getElementById(idnow).removeAttribute("checked")
         }
-
-    } else {
-        // Saat pause diklik
-        audioControl.pause()
-        playIcon.style.display = 'block'; // Tampilkan icon play
-        pauseIcon.style.display = 'none'; // Sembunyikan icon pause
-        clearInterval(progressInterval);
-        document.getElementById(idnow).checked = false;
-        document.getElementById(idnow).removeAttribute("checked")
+    }
+    catch(err) {
+        console.error(err)
     }
 }
 
@@ -253,6 +263,22 @@ volumeBtn.addEventListener('click', () => {
         audioControl.volume = currentAudiovolume
     }
 });
+
+document.getElementById("slidervolume").style.display="none";
+
+volumeBtn.addEventListener("mouseover", ()=>{
+    document.getElementById("slidervolume").style.display="";
+    document.querySelector("body").addEventListener("click", ()=>{
+        document.getElementById("slidervolume").style.display="none";
+    })
+
+})
+
+
+
+document.getElementById("mainVolume").addEventListener("input", ()=>{
+    audioControl.volume = document.getElementById("mainVolume").value/100
+})
 
 
 // DRAG FUNCTIONALITY - VARIABEL
@@ -348,7 +374,15 @@ inputSearch.addEventListener("focus", ()=>{
     popupwin.style.opacity = 1
 })
 
-document.getElementById("exit").addEventListener("click", ()=>{
-    popupwin.style.display = "none"
-})
+async function getAlbumthumniail() {
+    const randomSongs = await fetch(getRandomSongURL(5)).then(f=>f.json())
+    const randomSsongArtist = await randomSongs['subsonic-response'].randomSongs.song
+    const getRandomsongArtist = randomSsongArtist.map(f=> f.artist)
+    const getRandomsongID = randomSsongArtist.map(f=> f.id)
+    
+    getRandomsongID.forEach((v,t,a) => {
+        artisID.appendChild(article(getRandomsongArtist[t], getThumbnailURL(v, 300)))
+    });
+}   
 
+getAlbumthumniail()

@@ -1,474 +1,472 @@
 {
-    "subsonic-response": {
-        "status": "ok",
-        "version": "1.16.1",
-        "type": "navidrome",
-        "serverVersion": "0.58.0 (9dbe0c18)",
-        "openSubsonic": true,
-        "searchResult3": {
-            "artist": [
-                {
-                    "id": "5pTFSr8PCHbXfmwxAawkcp",
-                    "name": "Hindia",
-                    "coverArt": "ar-5pTFSr8PCHbXfmwxAawkcp_0",
-                    "albumCount": 1,
-                    "artistImageUrl": "https://musichost.myhomedrivekolens.my.id/share/img/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFyLTVwVEZTcjhQQ0hiWGZtd3hBYXdrY3BfMCIsImlzcyI6Ik5EIn0.mpttEOlLuAorefnL3Af6cd1-NsZ7hOzULKVpds9IdGY?size=600",
-                    "musicBrainzId": "",
-                    "sortName": "hindia",
-                    "roles": [
-                        "artist",
-                        "maincredit",
-                        "albumartist"
-                    ]
-                }
-            ],
-            "album": [
-                {
-                    "id": "3So9EfSiPYD6MV9hv5iAJG",
-                    "name": "[Unknown Album]",
-                    "artist": "Hindia",
-                    "artistId": "5pTFSr8PCHbXfmwxAawkcp",
-                    "coverArt": "al-3So9EfSiPYD6MV9hv5iAJG_690bfaa6",
-                    "songCount": 8,
-                    "duration": 1959,
-                    "playCount": 6,
-                    "created": "2025-11-06T01:37:32.734700783Z",
-                    "year": 2025,
-                    "played": "2025-11-06T08:27:26.313Z",
-                    "userRating": 0,
-                    "genres": [],
-                    "musicBrainzId": "",
-                    "isCompilation": false,
-                    "sortName": "[unknown album]",
-                    "discTitles": [],
-                    "originalReleaseDate": {},
-                    "releaseDate": {},
-                    "releaseTypes": [],
-                    "recordLabels": [],
-                    "moods": [],
-                    "artists": [
-                        {
-                            "id": "5pTFSr8PCHbXfmwxAawkcp",
-                            "name": "Hindia"
-                        }
-                    ],
-                    "displayArtist": "Hindia",
-                    "explicitStatus": "",
-                    "version": ""
-                }
-            ],
-            "song": [
-                {
-                    "id": "HQCJhJ8Wun0MT1nsADMMxN",
-                    "parent": "3So9EfSiPYD6MV9hv5iAJG",
-                    "isDir": false,
-                    "title": "Berdansalah, Karir Tak Ada Artinya (Official Lyric Video)",
-                    "album": "[Unknown Album]",
-                    "artist": "Hindia",
-                    "year": 2023,
-                    "coverArt": "mf-HQCJhJ8Wun0MT1nsADMMxN_690bfaa6",
-                    "size": 8407194,
-                    "contentType": "audio/mpeg",
-                    "suffix": "mp3",
-                    "duration": 224,
-                    "bitRate": 272,
-                    "path": "Hindia/[Unknown Album]/Berdansalah, Karir Tak Ada Artinya (Official Lyric Video).mp3",
-                    "playCount": 1,
-                    "created": "2025-11-06T01:37:32.734700783Z",
-                    "albumId": "3So9EfSiPYD6MV9hv5iAJG",
-                    "artistId": "5pTFSr8PCHbXfmwxAawkcp",
-                    "type": "music",
-                    "isVideo": false,
-                    "played": "2025-11-06T08:27:26.313Z",
-                    "bpm": 0,
-                    "comment": "https://www.youtube.com/watch?v=C2AFd1PLsF8",
-                    "sortName": "berdansalah, karir tak ada artinya (official lyric video)",
-                    "mediaType": "song",
-                    "musicBrainzId": "",
-                    "isrc": [],
-                    "genres": [],
-                    "replayGain": {},
-                    "channelCount": 2,
-                    "samplingRate": 48000,
-                    "bitDepth": 0,
-                    "moods": [],
-                    "artists": [
-                        {
-                            "id": "5pTFSr8PCHbXfmwxAawkcp",
-                            "name": "Hindia"
-                        }
-                    ],
-                    "displayArtist": "Hindia",
-                    "albumArtists": [
-                        {
-                            "id": "5pTFSr8PCHbXfmwxAawkcp",
-                            "name": "Hindia"
-                        }
-                    ],
-                    "displayAlbumArtist": "Hindia",
-                    "contributors": [],
-                    "displayComposer": "",
-                    "explicitStatus": ""
-                },
-                {
-                    "id": "5cHwZvmHjHOFz114SIpPPB",
-                    "parent": "3So9EfSiPYD6MV9hv5iAJG",
-                    "isDir": false,
-                    "title": "Cincin (Official Lyric Video)",
-                    "album": "[Unknown Album]",
-                    "artist": "Hindia",
-                    "year": 2023,
-                    "coverArt": "mf-5cHwZvmHjHOFz114SIpPPB_690bfaa3",
-                    "size": 9768972,
-                    "contentType": "audio/mpeg",
-                    "suffix": "mp3",
-                    "duration": 266,
-                    "bitRate": 269,
-                    "path": "Hindia/[Unknown Album]/Cincin (Official Lyric Video).mp3",
-                    "playCount": 2,
-                    "created": "2025-11-06T01:37:32.737180012Z",
-                    "albumId": "3So9EfSiPYD6MV9hv5iAJG",
-                    "artistId": "5pTFSr8PCHbXfmwxAawkcp",
-                    "type": "music",
-                    "isVideo": false,
-                    "played": "2025-11-06T03:39:24.114Z",
-                    "bpm": 0,
-                    "comment": "https://www.youtube.com/watch?v=S0Kez6MERGE",
-                    "sortName": "cincin (official lyric video)",
-                    "mediaType": "song",
-                    "musicBrainzId": "",
-                    "isrc": [],
-                    "genres": [],
-                    "replayGain": {},
-                    "channelCount": 2,
-                    "samplingRate": 48000,
-                    "bitDepth": 0,
-                    "moods": [],
-                    "artists": [
-                        {
-                            "id": "5pTFSr8PCHbXfmwxAawkcp",
-                            "name": "Hindia"
-                        }
-                    ],
-                    "displayArtist": "Hindia",
-                    "albumArtists": [
-                        {
-                            "id": "5pTFSr8PCHbXfmwxAawkcp",
-                            "name": "Hindia"
-                        }
-                    ],
-                    "displayAlbumArtist": "Hindia",
-                    "contributors": [],
-                    "displayComposer": "",
-                    "explicitStatus": ""
-                },
-                {
-                    "id": "TgcA5x4VukaLYB7aNeuYZi",
-                    "parent": "3So9EfSiPYD6MV9hv5iAJG",
-                    "isDir": false,
-                    "title": "Kita ke Sana (Official Lyric Video)",
-                    "album": "[Unknown Album]",
-                    "artist": "Hindia",
-                    "year": 2023,
-                    "coverArt": "mf-TgcA5x4VukaLYB7aNeuYZi_690bfaa1",
-                    "size": 11110803,
-                    "contentType": "audio/mpeg",
-                    "suffix": "mp3",
-                    "duration": 282,
-                    "bitRate": 271,
-                    "path": "Hindia/[Unknown Album]/Kita ke Sana (Official Lyric Video).mp3",
-                    "playCount": 1,
-                    "created": "2025-11-06T01:37:32.738884003Z",
-                    "albumId": "3So9EfSiPYD6MV9hv5iAJG",
-                    "artistId": "5pTFSr8PCHbXfmwxAawkcp",
-                    "type": "music",
-                    "isVideo": false,
-                    "played": "2025-11-06T02:58:29.101Z",
-                    "bpm": 0,
-                    "comment": "https://www.youtube.com/watch?v=DrulgpXAGCA",
-                    "sortName": "kita ke sana (official lyric video)",
-                    "mediaType": "song",
-                    "musicBrainzId": "",
-                    "isrc": [],
-                    "genres": [],
-                    "replayGain": {},
-                    "channelCount": 2,
-                    "samplingRate": 48000,
-                    "bitDepth": 0,
-                    "moods": [],
-                    "artists": [
-                        {
-                            "id": "5pTFSr8PCHbXfmwxAawkcp",
-                            "name": "Hindia"
-                        }
-                    ],
-                    "displayArtist": "Hindia",
-                    "albumArtists": [
-                        {
-                            "id": "5pTFSr8PCHbXfmwxAawkcp",
-                            "name": "Hindia"
-                        }
-                    ],
-                    "displayAlbumArtist": "Hindia",
-                    "contributors": [],
-                    "displayComposer": "",
-                    "explicitStatus": ""
-                },
-                {
-                    "id": "y7yWyIwCWHDyDfTMuC71hV",
-                    "parent": "3So9EfSiPYD6MV9hv5iAJG",
-                    "isDir": false,
-                    "title": "Rumah Ke Rumah (​Official Lyric & Commentary Video)",
-                    "album": "[Unknown Album]",
-                    "artist": "Hindia",
-                    "year": 2020,
-                    "coverArt": "mf-y7yWyIwCWHDyDfTMuC71hV_690bfaa4",
-                    "size": 10524960,
-                    "contentType": "audio/mpeg",
-                    "suffix": "mp3",
-                    "duration": 277,
-                    "bitRate": 271,
-                    "path": "Hindia/[Unknown Album]/Rumah Ke Rumah (​Official Lyric & Commentary Video).mp3",
-                    "playCount": 1,
-                    "created": "2025-11-06T01:37:32.739724563Z",
-                    "albumId": "3So9EfSiPYD6MV9hv5iAJG",
-                    "artistId": "5pTFSr8PCHbXfmwxAawkcp",
-                    "type": "music",
-                    "isVideo": false,
-                    "played": "2025-11-06T03:22:14.091Z",
-                    "bpm": 0,
-                    "comment": "https://www.youtube.com/watch?v=pjhOjHDX0A8",
-                    "sortName": "rumah ke rumah (​official lyric & commentary video)",
-                    "mediaType": "song",
-                    "musicBrainzId": "",
-                    "isrc": [],
-                    "genres": [],
-                    "replayGain": {},
-                    "channelCount": 2,
-                    "samplingRate": 48000,
-                    "bitDepth": 0,
-                    "moods": [],
-                    "artists": [
-                        {
-                            "id": "5pTFSr8PCHbXfmwxAawkcp",
-                            "name": "Hindia"
-                        }
-                    ],
-                    "displayArtist": "Hindia",
-                    "albumArtists": [
-                        {
-                            "id": "5pTFSr8PCHbXfmwxAawkcp",
-                            "name": "Hindia"
-                        }
-                    ],
-                    "displayAlbumArtist": "Hindia",
-                    "contributors": [],
-                    "displayComposer": "",
-                    "explicitStatus": ""
-                },
-                {
-                    "id": "z6l4j24xiMI9sDsLYFnmhq",
-                    "parent": "3So9EfSiPYD6MV9hv5iAJG",
-                    "isDir": false,
-                    "title": "Secukupnya (Lyric Video) - OST. Nanti Kita Cerita Tentang Hari Ini",
-                    "album": "[Unknown Album]",
-                    "artist": "Hindia",
-                    "year": 2019,
-                    "coverArt": "mf-z6l4j24xiMI9sDsLYFnmhq_690bfaa6",
-                    "size": 7401477,
-                    "contentType": "audio/mpeg",
-                    "suffix": "mp3",
-                    "duration": 227,
-                    "bitRate": 250,
-                    "path": "Hindia/[Unknown Album]/Secukupnya (Lyric Video) - OST. Nanti Kita Cerita Tentang Hari Ini.mp3",
-                    "playCount": 1,
-                    "created": "2025-11-06T01:37:32.73763481Z",
-                    "albumId": "3So9EfSiPYD6MV9hv5iAJG",
-                    "artistId": "5pTFSr8PCHbXfmwxAawkcp",
-                    "type": "music",
-                    "isVideo": false,
-                    "played": "2025-11-06T02:22:43.013Z",
-                    "bpm": 0,
-                    "comment": "https://www.youtube.com/watch?v=kcc9Kfip2uw",
-                    "sortName": "secukupnya (lyric video) - ost. nanti kita cerita tentang hari ini",
-                    "mediaType": "song",
-                    "musicBrainzId": "",
-                    "isrc": [],
-                    "genres": [],
-                    "replayGain": {},
-                    "channelCount": 2,
-                    "samplingRate": 48000,
-                    "bitDepth": 0,
-                    "moods": [],
-                    "artists": [
-                        {
-                            "id": "5pTFSr8PCHbXfmwxAawkcp",
-                            "name": "Hindia"
-                        }
-                    ],
-                    "displayArtist": "Hindia",
-                    "albumArtists": [
-                        {
-                            "id": "5pTFSr8PCHbXfmwxAawkcp",
-                            "name": "Hindia"
-                        }
-                    ],
-                    "displayAlbumArtist": "Hindia",
-                    "contributors": [],
-                    "displayComposer": "",
-                    "explicitStatus": ""
-                },
-                {
-                    "id": "yR3fXNi9pK7eqCOQHqOUc6",
-                    "parent": "3So9EfSiPYD6MV9hv5iAJG",
-                    "isDir": false,
-                    "title": "Secukupnya (Official Lyric & Commentary Video)",
-                    "album": "[Unknown Album]",
-                    "artist": "Hindia",
-                    "year": 2020,
-                    "coverArt": "mf-yR3fXNi9pK7eqCOQHqOUc6_690bfaa0",
-                    "size": 8991020,
-                    "contentType": "audio/mpeg",
-                    "suffix": "mp3",
-                    "duration": 205,
-                    "bitRate": 269,
-                    "path": "Hindia/[Unknown Album]/Secukupnya (Official Lyric & Commentary Video).mp3",
-                    "created": "2025-11-06T01:37:32.736441061Z",
-                    "albumId": "3So9EfSiPYD6MV9hv5iAJG",
-                    "artistId": "5pTFSr8PCHbXfmwxAawkcp",
-                    "type": "music",
-                    "isVideo": false,
-                    "bpm": 0,
-                    "comment": "https://www.youtube.com/watch?v=wnAKxtEi78c",
-                    "sortName": "secukupnya (official lyric & commentary video)",
-                    "mediaType": "song",
-                    "musicBrainzId": "",
-                    "isrc": [],
-                    "genres": [],
-                    "replayGain": {},
-                    "channelCount": 2,
-                    "samplingRate": 48000,
-                    "bitDepth": 0,
-                    "moods": [],
-                    "artists": [
-                        {
-                            "id": "5pTFSr8PCHbXfmwxAawkcp",
-                            "name": "Hindia"
-                        }
-                    ],
-                    "displayArtist": "Hindia",
-                    "albumArtists": [
-                        {
-                            "id": "5pTFSr8PCHbXfmwxAawkcp",
-                            "name": "Hindia"
-                        }
-                    ],
-                    "displayAlbumArtist": "Hindia",
-                    "contributors": [],
-                    "displayComposer": "",
-                    "explicitStatus": ""
-                },
-                {
-                    "id": "59iKGXuih807nF8pCoQHyM",
-                    "parent": "3So9EfSiPYD6MV9hv5iAJG",
-                    "isDir": false,
-                    "title": "everything u are",
-                    "album": "[Unknown Album]",
-                    "artist": "Hindia",
-                    "year": 2025,
-                    "coverArt": "mf-59iKGXuih807nF8pCoQHyM_690bfaa0",
-                    "size": 8357489,
-                    "contentType": "audio/mpeg",
-                    "suffix": "mp3",
-                    "duration": 236,
-                    "bitRate": 271,
-                    "path": "Hindia/[Unknown Album]/everything u are.mp3",
-                    "created": "2025-11-06T01:37:32.738302966Z",
-                    "albumId": "3So9EfSiPYD6MV9hv5iAJG",
-                    "artistId": "5pTFSr8PCHbXfmwxAawkcp",
-                    "type": "music",
-                    "isVideo": false,
-                    "bpm": 0,
-                    "comment": "https://www.youtube.com/watch?v=lB8ASupNtlw",
-                    "sortName": "everything u are",
-                    "mediaType": "song",
-                    "musicBrainzId": "",
-                    "isrc": [],
-                    "genres": [],
-                    "replayGain": {},
-                    "channelCount": 2,
-                    "samplingRate": 48000,
-                    "bitDepth": 0,
-                    "moods": [],
-                    "artists": [
-                        {
-                            "id": "5pTFSr8PCHbXfmwxAawkcp",
-                            "name": "Hindia"
-                        }
-                    ],
-                    "displayArtist": "Hindia",
-                    "albumArtists": [
-                        {
-                            "id": "5pTFSr8PCHbXfmwxAawkcp",
-                            "name": "Hindia"
-                        }
-                    ],
-                    "displayAlbumArtist": "Hindia",
-                    "contributors": [],
-                    "displayComposer": "",
-                    "explicitStatus": ""
-                },
-                {
-                    "id": "pOzDj2r6YYCPdYMay3XW9f",
-                    "parent": "3So9EfSiPYD6MV9hv5iAJG",
-                    "isDir": false,
-                    "title": "semua lagu cinta terdengar sama",
-                    "album": "[Unknown Album]",
-                    "artist": "Hindia",
-                    "year": 2025,
-                    "coverArt": "mf-pOzDj2r6YYCPdYMay3XW9f_690bfaa2",
-                    "size": 8122274,
-                    "contentType": "audio/mpeg",
-                    "suffix": "mp3",
-                    "duration": 238,
-                    "bitRate": 264,
-                    "path": "Hindia/[Unknown Album]/semua lagu cinta terdengar sama.mp3",
-                    "created": "2025-11-06T01:37:32.741462675Z",
-                    "albumId": "3So9EfSiPYD6MV9hv5iAJG",
-                    "artistId": "5pTFSr8PCHbXfmwxAawkcp",
-                    "type": "music",
-                    "isVideo": false,
-                    "bpm": 0,
-                    "comment": "https://www.youtube.com/watch?v=Jr0393tzwN8",
-                    "sortName": "semua lagu cinta terdengar sama",
-                    "mediaType": "song",
-                    "musicBrainzId": "",
-                    "isrc": [],
-                    "genres": [],
-                    "replayGain": {},
-                    "channelCount": 2,
-                    "samplingRate": 48000,
-                    "bitDepth": 0,
-                    "moods": [],
-                    "artists": [
-                        {
-                            "id": "5pTFSr8PCHbXfmwxAawkcp",
-                            "name": "Hindia"
-                        }
-                    ],
-                    "displayArtist": "Hindia",
-                    "albumArtists": [
-                        {
-                            "id": "5pTFSr8PCHbXfmwxAawkcp",
-                            "name": "Hindia"
-                        }
-                    ],
-                    "displayAlbumArtist": "Hindia",
-                    "contributors": [],
-                    "displayComposer": "",
-                    "explicitStatus": ""
-                }
-            ]
-        }
+    "status": "ok",
+    "version": "1.16.1",
+    "type": "navidrome",
+    "serverVersion": "0.58.0 (9dbe0c18)",
+    "openSubsonic": true,
+    "searchResult3": {
+        "artist": [
+            {
+                "id": "5pTFSr8PCHbXfmwxAawkcp",
+                "name": "Hindia",
+                "coverArt": "ar-5pTFSr8PCHbXfmwxAawkcp_0",
+                "albumCount": 1,
+                "artistImageUrl": "https://musichost.myhomedrivekolens.my.id/share/img/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFyLTVwVEZTcjhQQ0hiWGZtd3hBYXdrY3BfMCIsImlzcyI6Ik5EIn0.mpttEOlLuAorefnL3Af6cd1-NsZ7hOzULKVpds9IdGY?size=600",
+                "musicBrainzId": "",
+                "sortName": "hindia",
+                "roles": [
+                    "artist",
+                    "maincredit",
+                    "albumartist"
+                ]
+            }
+        ],
+        "album": [
+            {
+                "id": "3So9EfSiPYD6MV9hv5iAJG",
+                "name": "[Unknown Album]",
+                "artist": "Hindia",
+                "artistId": "5pTFSr8PCHbXfmwxAawkcp",
+                "coverArt": "al-3So9EfSiPYD6MV9hv5iAJG_690bfaa6",
+                "songCount": 8,
+                "duration": 1959,
+                "playCount": 6,
+                "created": "2025-11-06T01:37:32.734700783Z",
+                "year": 2025,
+                "played": "2025-11-06T08:27:26.313Z",
+                "userRating": 0,
+                "genres": [],
+                "musicBrainzId": "",
+                "isCompilation": false,
+                "sortName": "[unknown album]",
+                "discTitles": [],
+                "originalReleaseDate": {},
+                "releaseDate": {},
+                "releaseTypes": [],
+                "recordLabels": [],
+                "moods": [],
+                "artists": [
+                    {
+                        "id": "5pTFSr8PCHbXfmwxAawkcp",
+                        "name": "Hindia"
+                    }
+                ],
+                "displayArtist": "Hindia",
+                "explicitStatus": "",
+                "version": ""
+            }
+        ],
+        "song": [
+            {
+                "id": "HQCJhJ8Wun0MT1nsADMMxN",
+                "parent": "3So9EfSiPYD6MV9hv5iAJG",
+                "isDir": false,
+                "title": "Berdansalah, Karir Tak Ada Artinya (Official Lyric Video)",
+                "album": "[Unknown Album]",
+                "artist": "Hindia",
+                "year": 2023,
+                "coverArt": "mf-HQCJhJ8Wun0MT1nsADMMxN_690bfaa6",
+                "size": 8407194,
+                "contentType": "audio/mpeg",
+                "suffix": "mp3",
+                "duration": 224,
+                "bitRate": 272,
+                "path": "Hindia/[Unknown Album]/Berdansalah, Karir Tak Ada Artinya (Official Lyric Video).mp3",
+                "playCount": 1,
+                "created": "2025-11-06T01:37:32.734700783Z",
+                "albumId": "3So9EfSiPYD6MV9hv5iAJG",
+                "artistId": "5pTFSr8PCHbXfmwxAawkcp",
+                "type": "music",
+                "isVideo": false,
+                "played": "2025-11-06T08:27:26.313Z",
+                "bpm": 0,
+                "comment": "https://www.youtube.com/watch?v=C2AFd1PLsF8",
+                "sortName": "berdansalah, karir tak ada artinya (official lyric video)",
+                "mediaType": "song",
+                "musicBrainzId": "",
+                "isrc": [],
+                "genres": [],
+                "replayGain": {},
+                "channelCount": 2,
+                "samplingRate": 48000,
+                "bitDepth": 0,
+                "moods": [],
+                "artists": [
+                    {
+                        "id": "5pTFSr8PCHbXfmwxAawkcp",
+                        "name": "Hindia"
+                    }
+                ],
+                "displayArtist": "Hindia",
+                "albumArtists": [
+                    {
+                        "id": "5pTFSr8PCHbXfmwxAawkcp",
+                        "name": "Hindia"
+                    }
+                ],
+                "displayAlbumArtist": "Hindia",
+                "contributors": [],
+                "displayComposer": "",
+                "explicitStatus": ""
+            },
+            {
+                "id": "5cHwZvmHjHOFz114SIpPPB",
+                "parent": "3So9EfSiPYD6MV9hv5iAJG",
+                "isDir": false,
+                "title": "Cincin (Official Lyric Video)",
+                "album": "[Unknown Album]",
+                "artist": "Hindia",
+                "year": 2023,
+                "coverArt": "mf-5cHwZvmHjHOFz114SIpPPB_690bfaa3",
+                "size": 9768972,
+                "contentType": "audio/mpeg",
+                "suffix": "mp3",
+                "duration": 266,
+                "bitRate": 269,
+                "path": "Hindia/[Unknown Album]/Cincin (Official Lyric Video).mp3",
+                "playCount": 2,
+                "created": "2025-11-06T01:37:32.737180012Z",
+                "albumId": "3So9EfSiPYD6MV9hv5iAJG",
+                "artistId": "5pTFSr8PCHbXfmwxAawkcp",
+                "type": "music",
+                "isVideo": false,
+                "played": "2025-11-06T03:39:24.114Z",
+                "bpm": 0,
+                "comment": "https://www.youtube.com/watch?v=S0Kez6MERGE",
+                "sortName": "cincin (official lyric video)",
+                "mediaType": "song",
+                "musicBrainzId": "",
+                "isrc": [],
+                "genres": [],
+                "replayGain": {},
+                "channelCount": 2,
+                "samplingRate": 48000,
+                "bitDepth": 0,
+                "moods": [],
+                "artists": [
+                    {
+                        "id": "5pTFSr8PCHbXfmwxAawkcp",
+                        "name": "Hindia"
+                    }
+                ],
+                "displayArtist": "Hindia",
+                "albumArtists": [
+                    {
+                        "id": "5pTFSr8PCHbXfmwxAawkcp",
+                        "name": "Hindia"
+                    }
+                ],
+                "displayAlbumArtist": "Hindia",
+                "contributors": [],
+                "displayComposer": "",
+                "explicitStatus": ""
+            },
+            {
+                "id": "TgcA5x4VukaLYB7aNeuYZi",
+                "parent": "3So9EfSiPYD6MV9hv5iAJG",
+                "isDir": false,
+                "title": "Kita ke Sana (Official Lyric Video)",
+                "album": "[Unknown Album]",
+                "artist": "Hindia",
+                "year": 2023,
+                "coverArt": "mf-TgcA5x4VukaLYB7aNeuYZi_690bfaa1",
+                "size": 11110803,
+                "contentType": "audio/mpeg",
+                "suffix": "mp3",
+                "duration": 282,
+                "bitRate": 271,
+                "path": "Hindia/[Unknown Album]/Kita ke Sana (Official Lyric Video).mp3",
+                "playCount": 1,
+                "created": "2025-11-06T01:37:32.738884003Z",
+                "albumId": "3So9EfSiPYD6MV9hv5iAJG",
+                "artistId": "5pTFSr8PCHbXfmwxAawkcp",
+                "type": "music",
+                "isVideo": false,
+                "played": "2025-11-06T02:58:29.101Z",
+                "bpm": 0,
+                "comment": "https://www.youtube.com/watch?v=DrulgpXAGCA",
+                "sortName": "kita ke sana (official lyric video)",
+                "mediaType": "song",
+                "musicBrainzId": "",
+                "isrc": [],
+                "genres": [],
+                "replayGain": {},
+                "channelCount": 2,
+                "samplingRate": 48000,
+                "bitDepth": 0,
+                "moods": [],
+                "artists": [
+                    {
+                        "id": "5pTFSr8PCHbXfmwxAawkcp",
+                        "name": "Hindia"
+                    }
+                ],
+                "displayArtist": "Hindia",
+                "albumArtists": [
+                    {
+                        "id": "5pTFSr8PCHbXfmwxAawkcp",
+                        "name": "Hindia"
+                    }
+                ],
+                "displayAlbumArtist": "Hindia",
+                "contributors": [],
+                "displayComposer": "",
+                "explicitStatus": ""
+            },
+            {
+                "id": "y7yWyIwCWHDyDfTMuC71hV",
+                "parent": "3So9EfSiPYD6MV9hv5iAJG",
+                "isDir": false,
+                "title": "Rumah Ke Rumah (​Official Lyric & Commentary Video)",
+                "album": "[Unknown Album]",
+                "artist": "Hindia",
+                "year": 2020,
+                "coverArt": "mf-y7yWyIwCWHDyDfTMuC71hV_690bfaa4",
+                "size": 10524960,
+                "contentType": "audio/mpeg",
+                "suffix": "mp3",
+                "duration": 277,
+                "bitRate": 271,
+                "path": "Hindia/[Unknown Album]/Rumah Ke Rumah (​Official Lyric & Commentary Video).mp3",
+                "playCount": 1,
+                "created": "2025-11-06T01:37:32.739724563Z",
+                "albumId": "3So9EfSiPYD6MV9hv5iAJG",
+                "artistId": "5pTFSr8PCHbXfmwxAawkcp",
+                "type": "music",
+                "isVideo": false,
+                "played": "2025-11-06T03:22:14.091Z",
+                "bpm": 0,
+                "comment": "https://www.youtube.com/watch?v=pjhOjHDX0A8",
+                "sortName": "rumah ke rumah (​official lyric & commentary video)",
+                "mediaType": "song",
+                "musicBrainzId": "",
+                "isrc": [],
+                "genres": [],
+                "replayGain": {},
+                "channelCount": 2,
+                "samplingRate": 48000,
+                "bitDepth": 0,
+                "moods": [],
+                "artists": [
+                    {
+                        "id": "5pTFSr8PCHbXfmwxAawkcp",
+                        "name": "Hindia"
+                    }
+                ],
+                "displayArtist": "Hindia",
+                "albumArtists": [
+                    {
+                        "id": "5pTFSr8PCHbXfmwxAawkcp",
+                        "name": "Hindia"
+                    }
+                ],
+                "displayAlbumArtist": "Hindia",
+                "contributors": [],
+                "displayComposer": "",
+                "explicitStatus": ""
+            },
+            {
+                "id": "z6l4j24xiMI9sDsLYFnmhq",
+                "parent": "3So9EfSiPYD6MV9hv5iAJG",
+                "isDir": false,
+                "title": "Secukupnya (Lyric Video) - OST. Nanti Kita Cerita Tentang Hari Ini",
+                "album": "[Unknown Album]",
+                "artist": "Hindia",
+                "year": 2019,
+                "coverArt": "mf-z6l4j24xiMI9sDsLYFnmhq_690bfaa6",
+                "size": 7401477,
+                "contentType": "audio/mpeg",
+                "suffix": "mp3",
+                "duration": 227,
+                "bitRate": 250,
+                "path": "Hindia/[Unknown Album]/Secukupnya (Lyric Video) - OST. Nanti Kita Cerita Tentang Hari Ini.mp3",
+                "playCount": 1,
+                "created": "2025-11-06T01:37:32.73763481Z",
+                "albumId": "3So9EfSiPYD6MV9hv5iAJG",
+                "artistId": "5pTFSr8PCHbXfmwxAawkcp",
+                "type": "music",
+                "isVideo": false,
+                "played": "2025-11-06T02:22:43.013Z",
+                "bpm": 0,
+                "comment": "https://www.youtube.com/watch?v=kcc9Kfip2uw",
+                "sortName": "secukupnya (lyric video) - ost. nanti kita cerita tentang hari ini",
+                "mediaType": "song",
+                "musicBrainzId": "",
+                "isrc": [],
+                "genres": [],
+                "replayGain": {},
+                "channelCount": 2,
+                "samplingRate": 48000,
+                "bitDepth": 0,
+                "moods": [],
+                "artists": [
+                    {
+                        "id": "5pTFSr8PCHbXfmwxAawkcp",
+                        "name": "Hindia"
+                    }
+                ],
+                "displayArtist": "Hindia",
+                "albumArtists": [
+                    {
+                        "id": "5pTFSr8PCHbXfmwxAawkcp",
+                        "name": "Hindia"
+                    }
+                ],
+                "displayAlbumArtist": "Hindia",
+                "contributors": [],
+                "displayComposer": "",
+                "explicitStatus": ""
+            },
+            {
+                "id": "yR3fXNi9pK7eqCOQHqOUc6",
+                "parent": "3So9EfSiPYD6MV9hv5iAJG",
+                "isDir": false,
+                "title": "Secukupnya (Official Lyric & Commentary Video)",
+                "album": "[Unknown Album]",
+                "artist": "Hindia",
+                "year": 2020,
+                "coverArt": "mf-yR3fXNi9pK7eqCOQHqOUc6_690bfaa0",
+                "size": 8991020,
+                "contentType": "audio/mpeg",
+                "suffix": "mp3",
+                "duration": 205,
+                "bitRate": 269,
+                "path": "Hindia/[Unknown Album]/Secukupnya (Official Lyric & Commentary Video).mp3",
+                "created": "2025-11-06T01:37:32.736441061Z",
+                "albumId": "3So9EfSiPYD6MV9hv5iAJG",
+                "artistId": "5pTFSr8PCHbXfmwxAawkcp",
+                "type": "music",
+                "isVideo": false,
+                "bpm": 0,
+                "comment": "https://www.youtube.com/watch?v=wnAKxtEi78c",
+                "sortName": "secukupnya (official lyric & commentary video)",
+                "mediaType": "song",
+                "musicBrainzId": "",
+                "isrc": [],
+                "genres": [],
+                "replayGain": {},
+                "channelCount": 2,
+                "samplingRate": 48000,
+                "bitDepth": 0,
+                "moods": [],
+                "artists": [
+                    {
+                        "id": "5pTFSr8PCHbXfmwxAawkcp",
+                        "name": "Hindia"
+                    }
+                ],
+                "displayArtist": "Hindia",
+                "albumArtists": [
+                    {
+                        "id": "5pTFSr8PCHbXfmwxAawkcp",
+                        "name": "Hindia"
+                    }
+                ],
+                "displayAlbumArtist": "Hindia",
+                "contributors": [],
+                "displayComposer": "",
+                "explicitStatus": ""
+            },
+            {
+                "id": "59iKGXuih807nF8pCoQHyM",
+                "parent": "3So9EfSiPYD6MV9hv5iAJG",
+                "isDir": false,
+                "title": "everything u are",
+                "album": "[Unknown Album]",
+                "artist": "Hindia",
+                "year": 2025,
+                "coverArt": "mf-59iKGXuih807nF8pCoQHyM_690bfaa0",
+                "size": 8357489,
+                "contentType": "audio/mpeg",
+                "suffix": "mp3",
+                "duration": 236,
+                "bitRate": 271,
+                "path": "Hindia/[Unknown Album]/everything u are.mp3",
+                "created": "2025-11-06T01:37:32.738302966Z",
+                "albumId": "3So9EfSiPYD6MV9hv5iAJG",
+                "artistId": "5pTFSr8PCHbXfmwxAawkcp",
+                "type": "music",
+                "isVideo": false,
+                "bpm": 0,
+                "comment": "https://www.youtube.com/watch?v=lB8ASupNtlw",
+                "sortName": "everything u are",
+                "mediaType": "song",
+                "musicBrainzId": "",
+                "isrc": [],
+                "genres": [],
+                "replayGain": {},
+                "channelCount": 2,
+                "samplingRate": 48000,
+                "bitDepth": 0,
+                "moods": [],
+                "artists": [
+                    {
+                        "id": "5pTFSr8PCHbXfmwxAawkcp",
+                        "name": "Hindia"
+                    }
+                ],
+                "displayArtist": "Hindia",
+                "albumArtists": [
+                    {
+                        "id": "5pTFSr8PCHbXfmwxAawkcp",
+                        "name": "Hindia"
+                    }
+                ],
+                "displayAlbumArtist": "Hindia",
+                "contributors": [],
+                "displayComposer": "",
+                "explicitStatus": ""
+            },
+            {
+                "id": "pOzDj2r6YYCPdYMay3XW9f",
+                "parent": "3So9EfSiPYD6MV9hv5iAJG",
+                "isDir": false,
+                "title": "semua lagu cinta terdengar sama",
+                "album": "[Unknown Album]",
+                "artist": "Hindia",
+                "year": 2025,
+                "coverArt": "mf-pOzDj2r6YYCPdYMay3XW9f_690bfaa2",
+                "size": 8122274,
+                "contentType": "audio/mpeg",
+                "suffix": "mp3",
+                "duration": 238,
+                "bitRate": 264,
+                "path": "Hindia/[Unknown Album]/semua lagu cinta terdengar sama.mp3",
+                "created": "2025-11-06T01:37:32.741462675Z",
+                "albumId": "3So9EfSiPYD6MV9hv5iAJG",
+                "artistId": "5pTFSr8PCHbXfmwxAawkcp",
+                "type": "music",
+                "isVideo": false,
+                "bpm": 0,
+                "comment": "https://www.youtube.com/watch?v=Jr0393tzwN8",
+                "sortName": "semua lagu cinta terdengar sama",
+                "mediaType": "song",
+                "musicBrainzId": "",
+                "isrc": [],
+                "genres": [],
+                "replayGain": {},
+                "channelCount": 2,
+                "samplingRate": 48000,
+                "bitDepth": 0,
+                "moods": [],
+                "artists": [
+                    {
+                        "id": "5pTFSr8PCHbXfmwxAawkcp",
+                        "name": "Hindia"
+                    }
+                ],
+                "displayArtist": "Hindia",
+                "albumArtists": [
+                    {
+                        "id": "5pTFSr8PCHbXfmwxAawkcp",
+                        "name": "Hindia"
+                    }
+                ],
+                "displayAlbumArtist": "Hindia",
+                "contributors": [],
+                "displayComposer": "",
+                "explicitStatus": ""
+            }
+        ]
     }
 }

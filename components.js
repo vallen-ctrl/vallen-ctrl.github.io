@@ -16,7 +16,7 @@ const musicsongs = (title, artist, musicId=1, imageSRC="")=>{
                         <img src="${imageSRC}" alt="" id="image">
                     </div>
                     <div id="title">
-                        <p id="nameSong">${cutString(title, 20, "..")}</p>
+                        <p id="nameSong">${cutString(title, 30, "..")}</p>
                         <p id="penyanyi">${artist}</p>
                     </div>
                     <!-- From Uiverse.io by catraco -->
@@ -39,12 +39,18 @@ const musicsongs = (title, artist, musicId=1, imageSRC="")=>{
         }
 
     const article = (Artis, imageSRC) =>{
-        return `
+
+        const doc = document.createElement("div")
+        doc.innerHTML = `
             <article class="artist" role="listitem">
                 <img class="artist__cover" alt="Artist cover" src="${imageSRC}" />
                 <h3 class="artist__name">${Artis}</h3>
-                <p class="artist__meta">INFORMATIKA</p>
+                <p class="artist__meta">...</p>
             </article>
 
         `
+
+        return doc
     }
+
+
