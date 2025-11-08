@@ -3,38 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidebar Ikon Tooltip</title>
+    <title>Profile - Personal Information</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="sidebar-left">
-        <div class="menu-icon logo" data-tooltip="Music Player">
-        <img src="./OIP.png" alt="Logo Musik">
+    <div class="sidebar">
+        <div class="logo">
+            <i class="fas fa-folder"></i>
+        </div>
+
+        <div class="nav-items">
+            <div class="nav-item" title="Home">
+                <i class="fas fa-home"></i>
+            </div>
+            <div class="nav-item" title="Activity">
+                <i class="fas fa-broadcast-tower"></i>
+            </div>
+            <div class="nav-item" title="Explore">
+                <i class="fas fa-compass"></i>
+            </div>
+            <div class="nav-item active" title="Profile">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="nav-item" title="Favorites">
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="nav-item" title="Settings">
+                <i class="fas fa-cog"></i>
+            </div>
+        </div>
+
+        <div class="power-btn" title="Shutdown" onclick="shutdownSystem()">
+            <i class="fas fa-power-off"></i>
+        </div>
     </div>
-    <div class="menu-items">
-        <div class="menu-icon active" data-tooltip="Home">
-        <i class="fas fa-home"></i>
+
+    <div class="main-content">
+        <div class="profile-container">
+            <div class="profile-card">
+                <div class="profile-header">
+                    <div class="profile-picture-wrapper">
+                        <div class="profile-picture" id="profilePicture">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="edit-picture-btn" onclick="changePicture()">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                    </div>
+                    <div class="profile-picture-text">Profile Picture</div>
+                    <h1 class="profile-name" id="displayName">Username</h1>
+                    <p class="profile-email" id="displayEmail">email.pengguna@example.com</p>
+                </div>
+
+                <div class="profile-body">
+                    <h2 class="section-title">
+                        <i class="fas fa-info-circle"></i>
+                        Informasi Personal
+                    </h2>
+
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <div class="info-label">
+                                <i class="fas fa-user"></i>
+                                Nama Lengkap
+                            </div>
+                            <div class="info-value" id="infoName">-</div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-label">
+                                <i class="fas fa-envelope"></i>
+                                Email
+                            </div>
+                            <div class="info-value" id="infoEmail">-</div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-label">
+                                <i class="fas fa-phone"></i>
+                                Nomor Telepon
+                            </div>
+                            <div class="info-value empty" id="infoPhone">Belum diisi</div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-label">
+                                <i class="fas fa-birthday-cake"></i>
+                                Tanggal Lahir
+                            </div>
+                            <div class="info-value empty" id="infoBirthday">Belum diisi</div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-label">
+                                <i class="fas fa-venus-mars"></i>
+                                Jenis Kelamin
+                            </div>
+                            <div class="info-value empty" id="infoGender">Belum diisi</div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-label">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Alamat
+                            </div>
+                            <div class="info-value empty" id="infoAddress">Belum diisi</div>
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="btn btn-edit" onclick="openEditModal()">
+                            <i class="fas fa-edit"></i>
+                            Edit Profile
+                        </button>
+                        <button class="btn btn-logout" onclick="logout()">
+                            <i class="fas fa-sign-out-alt"></i>
+                            Logout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="menu-icon" data-tooltip="Radio">
-        <i class="fas fa-broadcast-tower"></i>
+
+    <div class="modal" id="editModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Edit Profile</h3>
+                <button class="modal-close" onclick="closeEditModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label>Nama Lengkap</label>
+                    <input type="text" id="editName" placeholder="Masukkan nama lengkap">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="editEmail" placeholder="Masukkan email">
+                </div>
+                <div class="form-group">
+                    <label>Nomor Telepon</label>
+                    <input type="tel" id="editPhone" placeholder="Masukkan nomor telepon">
+                </div>
+                <div class="form-group">
+                    <label>Tanggal Lahir</label>
+                    <input type="date" id="editBirthday">
+                </div>
+                <div class="form-group">
+                    <label>Jenis Kelamin</label>
+                    <select id="editGender">
+                        <option value="">Pilih jenis kelamin</option>
+                        <option value="Laki-laki">Laki-laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Alamat</label>
+                    <input type="text" id="editAddress" placeholder="Masukkan alamat">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-cancel" onclick="closeEditModal()">
+                    Batal
+                </button>
+                <button class="btn btn-save" onclick="saveProfile()">
+                    <i class="fas fa-save"></i>
+                    Simpan
+                </button>
+            </div>
+        </div>
     </div>
-    <div class="menu-icon" data-tooltip="Library">
-        <i class="fas fa-compact-disc"></i>
-    </div>
-    <div class="menu-icon" data-tooltip="Profile">
-        <i class="fas fa-user-circle"></i>
-    </div>
-    <div class="menu-icon" data-tooltip="Favorites">
-        <i class="fas fa-heart"></i>
-    </div>
-    <div class="menu-icon" data-tooltip="Settings">
-        <i class="fas fa-cog"></i>
-    </div>
-</div>
-    <div class="menu-icon power-button" data-tooltip="Power Off">
-        <i class="fas fa-power-off"></i>
-    </div>
-</div>
+
+    <script src="script.js"></script>
 </body>
 </html>
