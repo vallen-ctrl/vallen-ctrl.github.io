@@ -56,7 +56,7 @@ const musicsongs = (title, artist, musicId=1, imageSRC="")=>{
 
 const playlistPPage = () =>{
     const element = document.createElement("iframe");
-    const favPage = "./playlistpage/favpage.html"
+    const favPage = "../playlistpage/favpage.html"
     element.src = favPage;
     return element;
 }
