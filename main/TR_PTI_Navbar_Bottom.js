@@ -58,17 +58,19 @@ async function getMusicListAndSearch(search=""){
 }
 
 
-async function appendToMusic() {
+async function appendToMusic(panjang = 40) {
     try{
-        const songlist = await fetch(getRandomSongURL(20)).then(f => f.json());
+        const songlist = await fetch(getRandomSongURL(panjang)).then(f => f.json());
         const songs = songlist['subsonic-response'].randomSongs?.song || [];
-        document.getElementById("loaderMusicsong").remove()
         songs.forEach(element => {
             if(!songlistMetadata.includes(element.id)){
                 songlistMetadata.push(element.id)
                 musicContainer.appendChild(musicsongs(element.title, element.artist, element.id, getThumbnailURL(element.id)))
             }
         });
+        if(document.getElementById("loaderMusicsong")){
+            document.getElementById("loaderMusicsong").remove()
+        }
     }catch(err){
         console.error(err);
         document.getElementById("textdownload").textContent = "Retry?"
@@ -80,6 +82,22 @@ async function appendToMusic() {
 }
 
 appendToMusic()
+let sudahDiBottom = false;
+document.getElementById("musicSearch").addEventListener("scroll", async function() {
+    const scroltop = this.scrollTop;
+    const scrollHeight = this.scrollHeight;
+    const client = this.clientHeight;
+    const trushold = 200
+    const isbottom = scroltop + client >= scrollHeight - trushold;
+
+    if(isbottom && !sudahDiBottom){
+        sudahDiBottom = true
+        await appendToMusic(40);
+        console.log("print")
+    } else if(!isbottom){
+        sudahDiBottom = false
+    }
+})
 
 function chekQueue(id){
     console.log(dataMusic.length)
@@ -372,12 +390,16 @@ const debouncedSearch = debounce(async() => {
     search = inputSearch.value.replace(/\s+/g, '');
     console.log(search);
     if(!search == ' '){
+        document.getElementById("iframesarch").contentWindow.search(true)
         console.log("[INFO] wait to fetch")
         const songlist = await getMusicListAndSearch(inputSearch.value) || [];
         if(songlist.length <= 0) return null
         const songs = songlist['subsonic-response'].searchResult3?.song || [];
-        
-        document.getElementById("iframesarch").contentWindow.catchMusicSearch(songs);
+
+        setTimeout(()=>{
+            document.getElementById("iframesarch").contentWindow.search(false)
+            document.getElementById("iframesarch").contentWindow.catchMusicSearch(songs);
+        },500)
     }
 }, 500);
 
@@ -390,19 +412,22 @@ inputSearch.addEventListener("input", async()=>{
     
 })
 
+let mousehere = false
 
 inputSearch.addEventListener("focus", ()=>{
-    // ./search/SPindex.html
     iframesearch.style.display = "block";
-    // inputSearch.addEventListener("mouseleave", ()=>{
-    //     iframesearch.style.display = "none";
-    // })
+     mousehere = true
 })
 
 iframesearch.addEventListener("mouseenter", ()=>{
-    iframesearch.addEventListener("mouseout", ()=>{
+    mousehere = true
+})
+iframesearch.addEventListener("mouseleave", ()=>{ mousehere = false});
+
+document.addEventListener("click", (event)=>{
+    if(!iframesearch.contains(event.element) && !mousehere){
         iframesearch.style.display = "none";
-    })
+    }
 })
 
 
@@ -424,26 +449,6 @@ getAlbumthumniail()
 let innerthtmlhome;
 const el = document.getElementById("containercontent");
 innerthtmlhome=el.firstElementChild;
-function getFavPage() {
-    audioControl.pause()
-    playercontainer.style.transform = "translate(-50%,200px)"
-    el.innerHTML = ''
-    el.appendChild( playlistPPage())
-}
-// getFavPage()
-
-function goTOHOME() {
-    playercontainer.style.transform = "translate(-50%,0px)"
-    el.innerHTML = ''
-    el.appendChild(innerthtmlhome)
-}
-
-
-function profile (){
-    playercontainer.style.transform = "translate(-50%,200px)"
-    el.innerHTML = ''
-    el.appendChild( pforile())
-}
 
 const sidebar = document.querySelectorAll('.menu-icon');
 
@@ -452,8 +457,28 @@ sidebar.forEach(f=>{
     f.addEventListener("click", function(){
         sidebar.forEach(f => f.classList.remove("active"))
         this.classList.add('active');
+        const atributid = this.getAttribute("gotoID");
+        el.innerHTML = '';
+        switch(atributid){
+            case "1":
+                playercontainer.style.transform = "translate(-50%,0px)"
+                el.appendChild(innerthtmlhome)
+                break
+            case "2":
+                playercontainer.style.transform = "translate(-50%,200px)";
+                el.appendChild( pforile())
+                break;
+            case "3":
+                playpausebtn(currentID)
+                // audioControl.pause();
+                playercontainer.style.transform = "translate(-50%,200px)";
+                el.appendChild(playlistPPage());
+                break;
+        }
     })
 })
+
+
 
 document.getElementById("profile-pic").src = localStorage.getItem("profile_photo")
 

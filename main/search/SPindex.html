@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Custom Search Page</title>
   <link rel="stylesheet" href="SPstyle.css" />
 </head>
+
 <body>
   <main class="container" role="main">
-    
-    <!-- Search input  -->
-    <div class="search-wrapper">
-      
+
+    <!-- Search input  -->          
+    <div class="search-wrapper">                                            
+
     </div>
 
     <section class="content">
-      
-    
+
+
       <!-- Daftar lagu -->
       <section class="songs" aria-label="Songs list">
         <h2 id="res">Result</h2>
+        <div class="loader" id="loaders">
+          <div class="square" id="sq1"></div>
+          <div class="square" id="sq2"></div>
+          <div class="square" id="sq3"></div>
+          <div class="square" id="sq4"></div>
+          <div class="square" id="sq5"></div>
+          <div class="square" id="sq6"></div>
+          <div class="square" id="sq7"></div>
+          <div class="square" id="sq8"></div>
+          <div class="square" id="sq9"></div>
+        </div>
         <ul class="song-list" id="songresult">
           <!-- SONG RESULT -->
         </ul>
@@ -31,5 +44,5 @@
   <script src="../auth.js"></script>
   <script src="../components.js"></script>
 </body>
-</html>
 
+</html>

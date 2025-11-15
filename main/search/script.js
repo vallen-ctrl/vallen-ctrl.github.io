@@ -1,7 +1,20 @@
 const songresult = document.getElementById("songresult");
+const title = "Result";
+const change = document.getElementById("loaders")
 
+
+function search(isSearcing){
+  songresult.innerHTML = ''
+  console.log("MASUK KE SEARCH")
+    if(isSearcing){
+      change.style.display = "block";
+    }else{
+      change.style.display = "none";
+    }
+}
 
 async function catchMusicSearch(data = []){
+  
   console.log("[IFRAME-catchMusicSearch] Function called!");
   console.log("[IFRAME-catchMusicSearch] Data received:", data);
   console.log("[IFRAME-catchMusicSearch] Data length:", data.length);
