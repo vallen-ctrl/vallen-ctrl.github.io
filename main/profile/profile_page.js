@@ -599,3 +599,37 @@
                 closeEditPage();
             }
         });
+
+let userData = {
+    name: 'Username',
+    email: 'email.pengguna@example.com',
+    phone: '',
+    birthday: '',
+    gender: '',
+    address: '',
+    profilePicture: ''
+};
+
+function init() {
+    // Load saved data from localStorage if exists
+    const savedData = localStorage.getItem('user');
+    if (savedData) {
+        userData = JSON.parse(savedData);
+        updateDisplay();
+    }
+}
+
+function updateDisplay() {
+    document.getElementById('displayName').textContent = userData.name;
+    document.getElementById('displayUsername').textContent = userData.email;
+    document.getElementById('infoUsername').textContent = userData.email;
+    document.getElementById('infoName').textContent = userData.name;
+    document.getElementById('infoEmail').textContent = userData.email;
+    
+    if (userData.profilePicture) {
+        document.getElementById('profilePicture').innerHTML = 
+            `<img src="${userData.profilePicture}" alt="Profile">`;
+    }
+}
+
+init();

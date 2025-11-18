@@ -438,7 +438,7 @@ async function getAlbumthumniail() {
     const getRandomsongArtist = randomSsongArtist.map(f=> f.artist)
     const getRandomsongID = randomSsongArtist.map(f=> f.id)
     
-    getRandomsongID.forEach((v,t,a) => {
+    getRandomsongID.forEach((v,t) => {
         artisID.appendChild(article(getRandomsongArtist[t], getThumbnailURL(v, 300)))
     });
 }   
